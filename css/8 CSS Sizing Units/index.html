@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 3px solid blue;
+            width: 2048px;
+            width: 50vw;
+            margin: auto;
+            background-color: aqua;
+            text-align: center;
+        }
+        /* This will not work in span ... Sinse it is inline element */
+        span{
+            box-sizing: border-box;
+            border: 3px solid blue;
+            /* width: 2048px; */
+            width: 50vw;
+            margin: auto;
+            background-color: aqua;
+            /* text-align: center; */
+        }
+        .container{
+            box-sizing: border-box;
+            border: 3px solid blue;
+            /* width: 2048px; */
+            width: 50vw;
+            min-height: 30vh;
+            /* height: 80vh; */
+            margin: 20px auto;
+            font-size: 20px;
+            background-color: aqua;
+            /* text-align: center; */
+        }
+        .container div{
+            border: 2px solid black;
+            font-size: 2rem;
+            width: 50%;
+        }
+        .container div p{
+            border: 2px solid rebeccapurple;
+            width: 20%;
+            /* text-overflow: ellipsis; */
+            text-overflow: ellipsis;
+            width: 45px;
+            word-break: break-all;
+        }
+        .mycont{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+    <span class="box">This is a Box</span>
+    <div class="container">
+        Hellloooo Kp here
+        <div>heeeeeeeeeeeyyyyyyyyyyyy
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, consectetur. Sequi sunt voluptatibus eaque odio aut dolorum consectetur atque facere voluptates rerum iusto, enim quos, porro beatae nihil quidem iure? Veniam eum, libero rem hic sint autem fugiat recusandae dolorum possimus placeat eveniet laborum vel quaerat quisquam maxime minima natus quam sit accusantium veritatis. Ipsa tempora distinctio, itaque vero quas voluptate. Vel reiciendis ducimus voluptate recusandae adipisci id facere officia voluptas veritatis nulla eius facilis perferendis totam dicta magni repellendus corporis odit quibusdam obcaecati aspernatur quisquam, distinctio modi sint nam? Necessitatibus reiciendis tenetur optio culpa iure deleniti sed, omnis ut?
+           <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, odit veniam provident distinctio iusto ut voluptatem molestiae architecto doloribus, incidunt quasi velit, necessitatibus nemo quod accusantium eius? Expedita, rerum qui! Blanditiis eaque facere vel porro placeat excepturi, temporibus similique deserunt deleniti eveniet voluptas laudantium cumque.
+           </p>
+        </div>
+       
+    </div>
+    <div class="mycont">
+        I'm another container
+    </div>
+</body>
+</html>

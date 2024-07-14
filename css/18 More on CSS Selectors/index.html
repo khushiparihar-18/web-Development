@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .boxes:first-line{
+            color: yellow;
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 3px solid purple;
+        }
+        [data-color="primary"]{
+            margin-top: 50px;
+        }
+        [kp-3="tertiary"]{
+            padding-top: 50px;
+        }
+        p,h3,div{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: aqua;
+        } */
+        /* From last child or bottom most child */
+
+        .box:nth-last-child(1) {
+            color: purple;
+        }
+
+        /* From first child  */
+        .box:nth-child(1) {
+            color: red;
+        }
+
+        /* With the help of CSS I can Dynamically insert the elements */
+        /* known as pseudo elements >>'not selectors */
+        .boxes::before {
+            content: "kp is really great...!!!";
+            color: grey;
+        }
+
+        .boxes::after {
+            content: "KP3 is bestest ever";
+            color: darkorchid;
+        }
+
+        ::selection {
+            color: azure;
+            background-color: skyblue;
+        }
+        .box::first-letter{
+            color: peru;
+            /* background-color: red; */
+            font-size: 45px;
+        }
+        input::placeholder{
+            color:grey;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I'm first box</div>
+        <div class="box">hey I'm box</div>
+        <!-- <div kp-3="tertiary" class="box">Hey I'm a box</div> -->
+        <div class="box">Hey I'm a box</div>
+        <!-- <div>kp</div>
+        <p>kp here</p>
+       <h3>helllooooooooo.....</h3> -->
+       <input type="text" placeholder="enter your name here">
+    </div>
+</body>
+
+</html>
